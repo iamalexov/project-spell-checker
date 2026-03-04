@@ -10,4 +10,11 @@ describe("checkText", () => {
 
     expect(result).toEqual([]);
   });
+
+  test("detects misspelled words", () => {
+    const text = "he go to mars";
+    const result = checkText(text, dictionary);
+
+    expect(result).toEqual(["mars"]);
+  });
 });
