@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spell Checker</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <main id="app">
-      <h1>English Spell Checker</h1>
-      <label for="text-input">Enter text to check:</label>
-      <textarea spellcheck="true"></textarea>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spell Checker</title>
+</head>
+<body>
 
-      <label for="text-input">Output:</label>
-      <textarea spellcheck="false"></textarea>
-    <input type="button" name="SpellCheck" value="Spell Check" onclick="sendtext()" class="button" tabindex="5" accesskey="c">
-    
-   <section id="results" aria-live="polite"></section>
+<main>
 
-  </main>
+  <h1>Basic English Spell Checker</h1>
+  <div id="container"></div>
+  <!-- INPUT -->
+  <label for="text-input">Enter text:</label>
+  <textarea 
+    id="text-input"
+    rows="6"
+    spellcheck="false"
+  ></textarea>
 
-    <script type="module" src="script.mjs"></script>
-  </body>
+  <button id="check-btn" type="button">
+    Spell Check
+  </button>
+
+  <!-- OUTPUT -->
+  <label for="output-area">Output:</label>
+  <textarea 
+    id="output-area"
+    rows="4"
+    readonly
+  ></textarea>
+
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
 </html>
