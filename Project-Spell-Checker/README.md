@@ -73,3 +73,63 @@ Some examples of incorrect Basic English:
 - `she give gift, then go out`
 - `he like egg-nog`
 - `go to birmingham`
+
+
+
+# Project: Spell Checker
+
+# Basic English Spell Checker
+
+This project is a **Basic English Spell Checker** built using **HTML and JavaScript**.
+
+The application allows a user to enter text and check whether the words exist in a predefined **Basic English dictionary**.  
+If a word is not found in the dictionary, it is considered a spelling mistake and displayed to the user.
+
+The focus of this project is **application logic and text processing**, rather than UI design.
+
+---
+
+# Project Goal
+
+The goal of this project is to implement a simplified spell checker that:
+
+- checks every word in a text input
+- compares words against a Basic English dictionary
+- detects spelling mistakes
+- displays errors to the user
+
+The dictionary is provided in the file `words.json`.
+
+---
+
+# Features
+
+The application includes the following functionality:
+
+- Text input for user sentences
+- Button to trigger spell checking
+- Detection of misspelled words
+- Display of spelling errors below the input
+- Handling of punctuation marks
+- Support for hyphenated words
+- Ignoring proper nouns (capitalized words)
+- Clearing results when the input text changes
+
+---
+
+# How It Works
+
+The main spell checking logic is implemented in `spellChecker.js`.
+
+The application works in the following way:
+
+1. The user enters text into the textarea.
+2. When the **Spell Check** button is clicked, the function `checkText()` is called.
+3. The text is split into words.
+4. Punctuation is removed from each word.
+5. Hyphenated words are split into separate parts.
+6. Each word is compared against the dictionary.
+7. Words not found in the dictionary are considered spelling mistakes.
+8. Misspelled words are displayed in the output area.
+
+If no spelling mistakes are found, the application displays:
