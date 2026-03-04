@@ -17,4 +17,10 @@ describe("checkText", () => {
 
     expect(result).toEqual(["mars"]);
   });
+
+  test("ignores punctuation", () => { 
+    const text = "he go to the island,"; 
+    const result = checkText(text, dictionary); 
+    expect(result).toEqual([]); 
+});
 });
