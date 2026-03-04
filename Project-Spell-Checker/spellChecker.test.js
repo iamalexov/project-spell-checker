@@ -23,4 +23,11 @@ describe("checkText", () => {
     const result = checkText(text, dictionary); 
     expect(result).toEqual([]); 
 });
+
+  test("split hyphenates words", () => {
+    const text = "red-fire"; 
+    const result = checkText(text, dictionary);
+    
+    expect(result).toContain("red");
+  });
 });
