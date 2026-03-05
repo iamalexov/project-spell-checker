@@ -1,5 +1,5 @@
 import { checkText } from "./spellChecker.js";
-import words from "./words.json" with { type: "json" };
+import words from "./words.json" assert { type: "json" };
 
 const textarea = document.getElementById("text-input");
 const output = document.getElementById("output-area");
