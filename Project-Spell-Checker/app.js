@@ -8,7 +8,7 @@ const container = document.getElementById("container");
 const img = document.createElement("img");
 
 
-img.src = "https://upload.wikimedia.org/wikipedia/commons/d/df/Ford_F-150_Raptor_%28P552%29_IMG_3685.jpg"
+img.src = "https://images.unsplash.com/photo-1518770660439-4636190af475";
 container.appendChild(img);
 
 let customDictionary = [];
