@@ -1,17 +1,23 @@
 import { checkText } from "./spellChecker.js";
-import words from "./words.json" assert { type: "json" };
 
 const textarea = document.getElementById("text-input");
 const output = document.getElementById("output-area");
 const button = document.getElementById("check-btn");
 const container = document.getElementById("container");
+
 const img = document.createElement("img");
-
-
-img.src = "https://images.unsplash.com/photo-1518770660439-4636190af475";
+img.src = "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800";
 container.appendChild(img);
 
+let words = [];
 let customDictionary = [];
+
+async function loadDictionary() {
+  const response = await fetch("./words.json");
+  words = await response.json();
+}
+
+loadDictionary();
 
 button.addEventListener("click", () => {
   const text = textarea.value;
