@@ -11,8 +11,14 @@ main {
   margin: 40px auto;
 } 
 
+main {
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 body {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Ford_F-150_Raptor_%28P552%29_IMG_3685.jpg");
+  background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
