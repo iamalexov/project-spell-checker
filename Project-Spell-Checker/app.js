@@ -6,6 +6,8 @@ const button = document.getElementById("check-btn");
 const container = document.getElementById("container");
 
 const img = document.createElement("img");
+
+
 img.src = "https://images.unsplash.com/photo-1518770660439-4636190af475";
 container.appendChild(img);
 
