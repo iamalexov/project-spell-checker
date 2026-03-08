@@ -26,7 +26,7 @@ button.addEventListener("click", () => {
 
   output.value = "";
 
-  container.innerHTML = "";
+container.querySelectorAll("button").forEach(btn => btn.remove());
 
   if (errors.length === 0) {
     output.value = "No spelling mistakes found.";
